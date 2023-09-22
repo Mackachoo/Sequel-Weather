@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import WeatherScreen from './screens/weather/Weather';
-import LocationScreen from './screens/location/Location';
+import WeatherScreen from './screens/weather/page';
+import LocationScreen from './screens/location/page';
 import { NavigationContainer } from '@react-navigation/native';
 import { Entypo, MaterialCommunityIcons } from "@expo/vector-icons";
 
