@@ -10,27 +10,31 @@ import { Entypo, MaterialCommunityIcons } from "@expo/vector-icons";
 const Tab = createBottomTabNavigator();
 export default function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer >
       <StatusBar style="auto" />
-      <Tab.Navigator>
+      <Tab.Navigator >
         <Tab.Screen name="Weather" options={{
           headerTitle: 'Sequel Weather',
           tabBarLabel: 'Weather',
+          tabBarActiveTintColor: '#4D709E',
+          tabBarInactiveTintColor: '#8BB4EB',
           tabBarIcon: (state) => (
             <MaterialCommunityIcons
-              name="weather-partly-rainy"
+              name='weather-partly-rainy'
               size={24}
-              color={state.focused ? "#006600" : "#8e8e93"}
+              color={state.focused ? '#4D709E' : '#8BB4EB'}
             />),
         }} component={WeatherScreen} />
         <Tab.Screen name="Locations" options={{
           headerTitle: 'Sequel Weather',
           tabBarLabel: 'Locations',
+          tabBarActiveTintColor: '#4D709E',
+          tabBarInactiveTintColor: '#8BB4EB',
           tabBarIcon: (state) => (
             <Entypo
-              name="location"
+              name='location'
               size={24}
-              color={state.focused ? "#006600" : "#8e8e93"}
+              color={state.focused ? '#4D709E' : '#8BB4EB'}
             />),
         }} component={LocationScreen} />
       </Tab.Navigator>
@@ -38,15 +42,6 @@ export default function App() {
 
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 
 

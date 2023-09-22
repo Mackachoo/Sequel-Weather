@@ -1,41 +1,37 @@
-[debug] [2023-09-21T19:06:41.222Z] ----------------------------------------------------------------------
-[debug] [2023-09-21T19:06:41.224Z] Command:       /usr/local/bin/firebase /Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase emulators:start --only functions
-[debug] [2023-09-21T19:06:41.225Z] CLI Version:   11.28.0
-[debug] [2023-09-21T19:06:41.225Z] Platform:      darwin
-[debug] [2023-09-21T19:06:41.225Z] Node Version:  v16.16.0
-[debug] [2023-09-21T19:06:41.231Z] Time:          Thu Sep 21 2023 21:06:41 GMT+0200 (Central European Summer Time)
-[debug] [2023-09-21T19:06:41.232Z] ----------------------------------------------------------------------
+[debug] [2023-09-22T13:01:10.569Z] ----------------------------------------------------------------------
+[debug] [2023-09-22T13:01:10.571Z] Command:       /usr/local/bin/firebase /Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase emulators:start --only functions
+[debug] [2023-09-22T13:01:10.571Z] CLI Version:   11.28.0
+[debug] [2023-09-22T13:01:10.571Z] Platform:      darwin
+[debug] [2023-09-22T13:01:10.571Z] Node Version:  v16.16.0
+[debug] [2023-09-22T13:01:10.572Z] Time:          Fri Sep 22 2023 15:01:10 GMT+0200 (Central European Summer Time)
+[debug] [2023-09-22T13:01:10.573Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-09-21T19:06:41.305Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-09-21T19:06:41.306Z] > authorizing via signed-in user (mackachooo@gmail.com)
+[debug] [2023-09-22T13:01:10.632Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-22T13:01:10.632Z] > authorizing via signed-in user (mackachooo@gmail.com)
 [info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
-[debug] [2023-09-21T19:06:42.037Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-09-21T19:06:42.038Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2023-09-21T19:06:42.054Z] [hub] writing locator at /var/folders/1_/hrpgcd7x7tl2_345fm6y6qzc0000gn/T/hub-sequel-weather-91f3d.json
-[debug] [2023-09-21T19:06:42.544Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-09-21T19:06:42.545Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-09-21T19:06:42.545Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[debug] [2023-09-22T13:01:11.268Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-09-22T13:01:11.269Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-09-22T13:01:11.274Z] [hub] writing locator at /var/folders/1_/hrpgcd7x7tl2_345fm6y6qzc0000gn/T/hub-sequel-weather-91f3d.json
+[debug] [2023-09-22T13:01:11.709Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-09-22T13:01:11.710Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-09-22T13:01:11.710Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
 [warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
-[debug] [2023-09-21T19:06:42.548Z] defaultcredentials: writing to file /Users/mackachoo/.config/firebase/mackachooo_gmail_com_application_default_credentials.json
-[debug] [2023-09-21T19:06:42.550Z] Setting GAC to /Users/mackachoo/.config/firebase/mackachooo_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/mackachoo/.config/firebase/mackachooo_gmail_com_application_default_credentials.json"}}
-[debug] [2023-09-21T19:06:42.554Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sequel-weather-91f3d/adminSdkConfig [none]
-[debug] [2023-09-21T19:06:43.013Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sequel-weather-91f3d/adminSdkConfig 200
-[debug] [2023-09-21T19:06:43.013Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sequel-weather-91f3d/adminSdkConfig {"projectId":"sequel-weather-91f3d","databaseURL":"https://sequel-weather-91f3d-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"sequel-weather-91f3d.appspot.com"}
-[info] i  ui: downloading ui-v1.11.5.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.5.zip..."}}
-[debug] [2023-09-21T19:06:43.040Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.5.zip 
-[debug] [2023-09-21T19:06:43.446Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.5.zip 200
-[debug] [2023-09-21T19:06:43.446Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.5.zip [stream]
-[debug] [2023-09-21T19:06:46.291Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2023-09-21T19:06:46.291Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2023-09-21T19:06:46.291Z] Starting Emulator UI with command {"binary":"node","args":["/Users/mackachoo/.cache/firebase/emulators/ui-v1.11.5/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/mackachoo/.cache/firebase/emulators/ui-v1.11.5/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[debug] [2023-09-22T13:01:11.713Z] defaultcredentials: writing to file /Users/mackachoo/.config/firebase/mackachooo_gmail_com_application_default_credentials.json
+[debug] [2023-09-22T13:01:11.715Z] Setting GAC to /Users/mackachoo/.config/firebase/mackachooo_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/mackachoo/.config/firebase/mackachooo_gmail_com_application_default_credentials.json"}}
+[debug] [2023-09-22T13:01:11.717Z] > refreshing access token with scopes: []
+[debug] [2023-09-22T13:01:11.719Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-22T13:01:11.720Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-22T13:01:11.738Z] Failed to get Admin SDK config for sequel-weather-91f3d, falling back to cacheFailed to get Admin SDK for Firebase project sequel-weather-91f3d. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project sequel-weather-91f3d. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"exit":1,"message":"Authentication Error: Your credentials are no longer valid. Please run \u001b[1mfirebase login --reauth\u001b[22m\n\nFor CI servers and headless environments, generate a new token with \u001b[1mfirebase login:ci\u001b[22m","status":500},"status":500}
+[debug] [2023-09-22T13:01:11.749Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-09-22T13:01:11.750Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-09-22T13:01:11.750Z] Starting Emulator UI with command {"binary":"node","args":["/Users/mackachoo/.cache/firebase/emulators/ui-v1.11.5/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/mackachoo/.cache/firebase/emulators/ui-v1.11.5/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
 [info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2023-09-21T19:06:46.519Z] Web / API server started at 127.0.0.1:4000
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
-[debug] [2023-09-21T19:06:46.519Z] Web / API server started at ::1:4000
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[debug] [2023-09-22T13:01:12.015Z] Web / API server started at 127.0.0.1:4000
+Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\nWeb / API server started at ::1:4000\n"}}
 [info] i  functions: Watching "/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions\" for Cloud Functions..."}}
-[debug] [2023-09-21T19:06:46.562Z] Validating nodejs source
-[debug] [2023-09-21T19:06:47.694Z] > [functions] package.json contents: {
+[debug] [2023-09-22T13:01:12.022Z] Validating nodejs source
+[debug] [2023-09-22T13:01:12.675Z] > [functions] package.json contents: {
   "name": "functions",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
@@ -67,16 +63,16 @@
   },
   "private": true
 }
-[debug] [2023-09-21T19:06:47.695Z] Building nodejs source
-[debug] [2023-09-21T19:06:47.695Z] Failed to find version of module node: reached end of search path /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules
+[debug] [2023-09-22T13:01:12.676Z] Building nodejs source
+[debug] [2023-09-22T13:01:12.676Z] Failed to find version of module node: reached end of search path /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules
 [warn] ⚠  functions: You've requested "node" version "18", but the standalone Firebase CLI comes with bundled Node "16". 
 [info] ✔  functions: To use a different Node.js version, consider removing the standalone Firebase CLI and switching to "firebase-tools" on npm. 
-[debug] [2023-09-21T19:06:47.698Z] Could not find functions.yaml. Must use http discovery
-[debug] [2023-09-21T19:06:47.704Z] Found firebase-functions binary at '/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/.bin/firebase-functions'
-[debug] [2023-09-21T19:06:48.261Z] Serving at port 8238
+[debug] [2023-09-22T13:01:12.680Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-09-22T13:01:12.686Z] Found firebase-functions binary at '/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-09-22T13:01:13.772Z] Serving at port 8977
 
-[debug] [2023-09-21T19:06:48.566Z] Got response from /__/functions.yaml {"endpoints":{"getWeather":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"getWeather"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[debug] [2023-09-21T19:06:48.572Z] shutdown requested via /__/quitquitquit
+[debug] [2023-09-22T13:01:14.094Z] Got response from /__/functions.yaml {"endpoints":{"getWeather":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"getWeather"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-09-22T13:01:14.102Z] shutdown requested via /__/quitquitquit
 
 [info] ✔  functions: Loaded functions definitions from source: getWeather. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getWeather."}}
 [info] ✔  functions[us-central1-getWeather]: http function initialized (http://127.0.0.1:5001/sequel-weather-91f3d/us-central1/getWeather). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/sequel-weather-91f3d/us-central1/getWeather)."}}
@@ -96,461 +92,134 @@
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
-[debug] [2023-09-21T19:07:47.738Z] [work-queue] {"queuedWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-21T19:07:47.738Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2023-09-21T19:07:47.739Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-21T19:07:47.738Z"],"workRunningCount":1}
-[debug] [2023-09-21T19:07:47.739Z] Accepted request GET /sequel-weather-91f3d/us-central1/getWeather --> us-central1-getWeather
-[debug] [2023-09-21T19:07:47.740Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2023-09-21T19:07:47.741Z] [functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/"}}
-[debug] [2023-09-21T19:07:47.753Z] [worker-pool] addWorker(us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-getWeather)"}}
-[debug] [2023-09-21T19:07:47.756Z] [worker-pool] Adding worker with key us-central1-getWeather, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-getWeather, total=1"}}
-[debug] [2023-09-21T19:07:49.480Z] [runtime-status] [94382] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [94382] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2023-09-21T19:07:49.481Z] [runtime-status] [94382] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [94382] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
-[debug] [2023-09-21T19:07:49.481Z] [runtime-status] [94382] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [94382] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2023-09-21T19:07:49.482Z] [runtime-status] [94382] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [94382] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
-[debug] [2023-09-21T19:07:49.776Z] [runtime-status] [94382] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [94382] Checked functions.config() {\"config\":{}}"}}
-[debug] [2023-09-21T19:07:49.776Z] [runtime-status] [94382] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [94382] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
-[debug] [2023-09-21T19:07:49.777Z] [runtime-status] [94382] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [94382] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
-[debug] [2023-09-21T19:07:49.778Z] [runtime-status] [94382] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [94382] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2023-09-21T19:07:49.781Z] [runtime-status] [94382] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [94382] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
-[debug] [2023-09-21T19:07:49.781Z] [runtime-status] [94382] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [94382] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
-[debug] [2023-09-21T19:07:49.786Z] [runtime-status] [94382] Functions runtime initialized. {"cwd":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [94382] Functions runtime initialized. {\"cwd\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions\",\"node_version\":\"16.16.0\"}"}}
-[debug] [2023-09-21T19:07:49.787Z] [runtime-status] [94382] Listening to port: /var/folders/1_/hrpgcd7x7tl2_345fm6y6qzc0000gn/T/fire_emu_7121225fb5276b1a.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [94382] Listening to port: /var/folders/1_/hrpgcd7x7tl2_345fm6y6qzc0000gn/T/fire_emu_7121225fb5276b1a.sock"}}
-[debug] [2023-09-21T19:07:49.880Z] [worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: IDLE"}}
-[debug] [2023-09-21T19:07:49.881Z] [worker-pool] submitRequest(triggerId=us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getWeather)"}}
+[debug] [2023-09-22T13:01:21.074Z] [work-queue] {"queuedWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-22T13:01:21.073Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-09-22T13:01:21.074Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-22T13:01:21.073Z"],"workRunningCount":1}
+[debug] [2023-09-22T13:01:21.074Z] Accepted request GET /sequel-weather-91f3d/us-central1/getWeather --> us-central1-getWeather
+[debug] [2023-09-22T13:01:21.075Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-09-22T13:01:21.075Z] [functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/"}}
+[debug] [2023-09-22T13:01:21.083Z] [worker-pool] addWorker(us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-getWeather)"}}
+[debug] [2023-09-22T13:01:21.085Z] [worker-pool] Adding worker with key us-central1-getWeather, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-getWeather, total=1"}}
+[debug] [2023-09-22T13:01:22.272Z] [work-queue] {"queuedWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-22T13:01:22.272Z"],"queueLength":1,"runningWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-22T13:01:21.073Z"],"workRunningCount":1}
+[debug] [2023-09-22T13:01:22.273Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-22T13:01:21.073Z","/sequel-weather-91f3d/us-central1/getWeather-2023-09-22T13:01:22.272Z"],"workRunningCount":2}
+[debug] [2023-09-22T13:01:22.273Z] Accepted request GET /sequel-weather-91f3d/us-central1/getWeather --> us-central1-getWeather
+[debug] [2023-09-22T13:01:22.273Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-09-22T13:01:22.274Z] [functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/"}}
+[debug] [2023-09-22T13:01:22.281Z] [worker-pool] addWorker(us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-getWeather)"}}
+[debug] [2023-09-22T13:01:22.282Z] [worker-pool] Adding worker with key us-central1-getWeather, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-getWeather, total=2"}}
+[debug] [2023-09-22T13:01:22.558Z] [runtime-status] [1312] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1312] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-09-22T13:01:22.558Z] [runtime-status] [1312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:01:22.558Z] [runtime-status] [1312] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1312] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-09-22T13:01:22.559Z] [runtime-status] [1312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:01:22.842Z] [runtime-status] [1312] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1312] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-09-22T13:01:22.842Z] [runtime-status] [1312] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1312] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-09-22T13:01:22.843Z] [runtime-status] [1312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:01:22.848Z] [runtime-status] [1312] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1312] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-09-22T13:01:22.848Z] [runtime-status] [1312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:01:22.848Z] [runtime-status] [1312] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1312] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-09-22T13:01:22.852Z] [runtime-status] [1312] Functions runtime initialized. {"cwd":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1312] Functions runtime initialized. {\"cwd\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2023-09-22T13:01:22.853Z] [runtime-status] [1312] Listening to port: /var/folders/1_/hrpgcd7x7tl2_345fm6y6qzc0000gn/T/fire_emu_52f99cb98f621db7.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1312] Listening to port: /var/folders/1_/hrpgcd7x7tl2_345fm6y6qzc0000gn/T/fire_emu_52f99cb98f621db7.sock"}}
+[debug] [2023-09-22T13:01:22.912Z] [worker-us-central1-getWeather-482c58fb-e2dc-46e6-80e7-56e059c43cd3]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-482c58fb-e2dc-46e6-80e7-56e059c43cd3]: IDLE"}}
+[debug] [2023-09-22T13:01:22.912Z] [worker-pool] submitRequest(triggerId=us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getWeather)"}}
 [info] i  functions: Beginning execution of "us-central1-getWeather" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"Beginning execution of \"us-central1-getWeather\""}}
-[debug] [2023-09-21T19:07:49.882Z] [worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: BUSY"}}
+[debug] [2023-09-22T13:01:22.914Z] [worker-us-central1-getWeather-482c58fb-e2dc-46e6-80e7-56e059c43cd3]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-482c58fb-e2dc-46e6-80e7-56e059c43cd3]: BUSY"}}
 [warn] ⚠  External network resource requested!
    - URL: "https://api.open-meteo.com/v1/forecast?latitude=51.51&longitude=-0.13&hourly=temperature_2m&current_weather=true"
  - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://api.open-meteo.com/v1/forecast?latitude=51.51&longitude=-0.13&hourly=temperature_2m&current_weather=true\"\n - Be careful, this may be a production service."}}
-[info] i  functions: Finished "us-central1-getWeather" in 392.445172ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"Finished \"us-central1-getWeather\" in 392.445172ms"}}
-[debug] [2023-09-21T19:07:50.275Z] [worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: IDLE"}}
-[debug] [2023-09-21T19:07:50.275Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2023-09-21T19:07:50.367Z] Functions emulator received unknown request at path /favicon.ico
-[debug] [2023-09-21T19:08:01.928Z] [work-queue] {"queuedWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-21T19:08:01.927Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2023-09-21T19:08:01.928Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-21T19:08:01.927Z"],"workRunningCount":1}
-[debug] [2023-09-21T19:08:01.928Z] Accepted request GET /sequel-weather-91f3d/us-central1/getWeather --> us-central1-getWeather
-[debug] [2023-09-21T19:08:01.928Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2023-09-21T19:08:01.929Z] [functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/"}}
-[debug] [2023-09-21T19:08:01.929Z] [worker-pool] submitRequest(triggerId=us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getWeather)"}}
+[info] >  node:events:505 {"user":"node:events:505","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m node:events:505"}}
+[info] >        throw er; // Unhandled 'error' event {"user":"      throw er; // Unhandled 'error' event","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m       throw er; // Unhandled 'error' event"}}
+[info] >        ^ {"user":"      ^","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m       ^"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  Error: getaddrinfo ENOTFOUND api.open-meteo.com {"user":"Error: getaddrinfo ENOTFOUND api.open-meteo.com","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m Error: getaddrinfo ENOTFOUND api.open-meteo.com"}}
+[info] >      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26) {"user":"    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m     at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"}}
+[info] >  Emitted 'error' event on ClientRequest instance at: {"user":"Emitted 'error' event on ClientRequest instance at:","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m Emitted 'error' event on ClientRequest instance at:"}}
+[info] >      at TLSSocket.socketErrorListener (node:_http_client:454:9) {"user":"    at TLSSocket.socketErrorListener (node:_http_client:454:9)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m     at TLSSocket.socketErrorListener (node:_http_client:454:9)"}}
+[info] >      at TLSSocket.emit (node:events:527:28) {"user":"    at TLSSocket.emit (node:events:527:28)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m     at TLSSocket.emit (node:events:527:28)"}}
+[info] >      at emitErrorNT (node:internal/streams/destroy:157:8) {"user":"    at emitErrorNT (node:internal/streams/destroy:157:8)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m     at emitErrorNT (node:internal/streams/destroy:157:8)"}}
+[info] >      at emitErrorCloseNT (node:internal/streams/destroy:122:3) {"user":"    at emitErrorCloseNT (node:internal/streams/destroy:122:3)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m     at emitErrorCloseNT (node:internal/streams/destroy:122:3)"}}
+[info] >      at processTicksAndRejections (node:internal/process/task_queues:83:21) { {"user":"    at processTicksAndRejections (node:internal/process/task_queues:83:21) {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m     at processTicksAndRejections (node:internal/process/task_queues:83:21) {"}}
+[info] >    errno: -3008, {"user":"  errno: -3008,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m   errno: -3008,"}}
+[info] >    code: 'ENOTFOUND', {"user":"  code: 'ENOTFOUND',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m   code: 'ENOTFOUND',"}}
+[info] >    syscall: 'getaddrinfo', {"user":"  syscall: 'getaddrinfo',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m   syscall: 'getaddrinfo',"}}
+[info] >    hostname: 'api.open-meteo.com' {"user":"  hostname: 'api.open-meteo.com'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m   hostname: 'api.open-meteo.com'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[error] i  Request to function failed: Error: socket hang up {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"Request to function failed: Error: socket hang up"}}
+[debug] [2023-09-22T13:01:22.965Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-22T13:01:22.272Z"],"workRunningCount":1}
+[debug] [2023-09-22T13:01:22.966Z] [worker-us-central1-getWeather-482c58fb-e2dc-46e6-80e7-56e059c43cd3]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-482c58fb-e2dc-46e6-80e7-56e059c43cd3]: exited"}}
+[debug] [2023-09-22T13:01:22.966Z] [worker-us-central1-getWeather-482c58fb-e2dc-46e6-80e7-56e059c43cd3]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-482c58fb-e2dc-46e6-80e7-56e059c43cd3]: FINISHED"}}
+[debug] [2023-09-22T13:01:23.397Z] [runtime-status] [1317] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1317] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-09-22T13:01:23.399Z] [runtime-status] [1317] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1317] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:01:23.399Z] [runtime-status] [1317] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1317] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-09-22T13:01:23.400Z] [runtime-status] [1317] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1317] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:01:23.584Z] [runtime-status] [1317] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1317] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-09-22T13:01:23.585Z] [runtime-status] [1317] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1317] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-09-22T13:01:23.585Z] [runtime-status] [1317] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1317] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:01:23.586Z] [runtime-status] [1317] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1317] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-09-22T13:01:23.588Z] [runtime-status] [1317] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1317] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:01:23.589Z] [runtime-status] [1317] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1317] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-09-22T13:01:23.594Z] [runtime-status] [1317] Functions runtime initialized. {"cwd":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1317] Functions runtime initialized. {\"cwd\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2023-09-22T13:01:23.595Z] [runtime-status] [1317] Listening to port: /var/folders/1_/hrpgcd7x7tl2_345fm6y6qzc0000gn/T/fire_emu_a7856a03c2cec675.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1317] Listening to port: /var/folders/1_/hrpgcd7x7tl2_345fm6y6qzc0000gn/T/fire_emu_a7856a03c2cec675.sock"}}
+[debug] [2023-09-22T13:01:23.600Z] [worker-us-central1-getWeather-4dd5b14e-d17f-4a13-930e-b97d97c06b26]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-4dd5b14e-d17f-4a13-930e-b97d97c06b26]: IDLE"}}
+[debug] [2023-09-22T13:01:23.600Z] [worker-pool] submitRequest(triggerId=us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getWeather)"}}
+[debug] [2023-09-22T13:01:23.600Z] [worker-pool] Cleaned up workers for us-central1-getWeather: 2 --> 1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-getWeather: 2 --> 1"}}
 [info] i  functions: Beginning execution of "us-central1-getWeather" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"Beginning execution of \"us-central1-getWeather\""}}
-[debug] [2023-09-21T19:08:01.929Z] [worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: BUSY"}}
-[info] i  functions: Finished "us-central1-getWeather" in 336.199121ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"Finished \"us-central1-getWeather\" in 336.199121ms"}}
-[debug] [2023-09-21T19:08:02.266Z] [worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: IDLE"}}
-[debug] [2023-09-21T19:08:02.266Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2023-09-21T19:08:04.529Z] [work-queue] {"queuedWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-21T19:08:04.529Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2023-09-21T19:08:04.530Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-21T19:08:04.529Z"],"workRunningCount":1}
-[debug] [2023-09-21T19:08:04.530Z] Accepted request GET /sequel-weather-91f3d/us-central1/getWeather --> us-central1-getWeather
-[debug] [2023-09-21T19:08:04.530Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2023-09-21T19:08:04.530Z] [functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/"}}
-[debug] [2023-09-21T19:08:04.530Z] [worker-pool] submitRequest(triggerId=us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getWeather)"}}
+[debug] [2023-09-22T13:01:23.601Z] [worker-us-central1-getWeather-4dd5b14e-d17f-4a13-930e-b97d97c06b26]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-4dd5b14e-d17f-4a13-930e-b97d97c06b26]: BUSY"}}
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.open-meteo.com/v1/forecast?latitude=51.51&longitude=-0.13&hourly=temperature_2m&current_weather=true"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://api.open-meteo.com/v1/forecast?latitude=51.51&longitude=-0.13&hourly=temperature_2m&current_weather=true\"\n - Be careful, this may be a production service."}}
+[info] >  node:events:505 {"user":"node:events:505","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m node:events:505"}}
+[info] >        throw er; // Unhandled 'error' event {"user":"      throw er; // Unhandled 'error' event","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m       throw er; // Unhandled 'error' event"}}
+[info] >        ^ {"user":"      ^","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m       ^"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  Error: getaddrinfo ENOTFOUND api.open-meteo.com {"user":"Error: getaddrinfo ENOTFOUND api.open-meteo.com","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m Error: getaddrinfo ENOTFOUND api.open-meteo.com"}}
+[info] >      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26) {"user":"    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m     at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"}}
+[info] >  Emitted 'error' event on ClientRequest instance at: {"user":"Emitted 'error' event on ClientRequest instance at:","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m Emitted 'error' event on ClientRequest instance at:"}}
+[info] >      at TLSSocket.socketErrorListener (node:_http_client:454:9) {"user":"    at TLSSocket.socketErrorListener (node:_http_client:454:9)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m     at TLSSocket.socketErrorListener (node:_http_client:454:9)"}}
+[info] >      at TLSSocket.emit (node:events:527:28) {"user":"    at TLSSocket.emit (node:events:527:28)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m     at TLSSocket.emit (node:events:527:28)"}}
+[info] >      at emitErrorNT (node:internal/streams/destroy:157:8) {"user":"    at emitErrorNT (node:internal/streams/destroy:157:8)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m     at emitErrorNT (node:internal/streams/destroy:157:8)"}}
+[info] >      at emitErrorCloseNT (node:internal/streams/destroy:122:3) {"user":"    at emitErrorCloseNT (node:internal/streams/destroy:122:3)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m     at emitErrorCloseNT (node:internal/streams/destroy:122:3)"}}
+[info] >      at processTicksAndRejections (node:internal/process/task_queues:83:21) { {"user":"    at processTicksAndRejections (node:internal/process/task_queues:83:21) {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m     at processTicksAndRejections (node:internal/process/task_queues:83:21) {"}}
+[info] >    errno: -3008, {"user":"  errno: -3008,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m   errno: -3008,"}}
+[info] >    code: 'ENOTFOUND', {"user":"  code: 'ENOTFOUND',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m   code: 'ENOTFOUND',"}}
+[info] >    syscall: 'getaddrinfo', {"user":"  syscall: 'getaddrinfo',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m   syscall: 'getaddrinfo',"}}
+[info] >    hostname: 'api.open-meteo.com' {"user":"  hostname: 'api.open-meteo.com'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m   hostname: 'api.open-meteo.com'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[error] i  Request to function failed: Error: socket hang up {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"Request to function failed: Error: socket hang up"}}
+[debug] [2023-09-22T13:01:23.645Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-09-22T13:01:23.646Z] [worker-us-central1-getWeather-4dd5b14e-d17f-4a13-930e-b97d97c06b26]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-4dd5b14e-d17f-4a13-930e-b97d97c06b26]: exited"}}
+[debug] [2023-09-22T13:01:23.646Z] [worker-us-central1-getWeather-4dd5b14e-d17f-4a13-930e-b97d97c06b26]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-4dd5b14e-d17f-4a13-930e-b97d97c06b26]: FINISHED"}}
+[debug] [2023-09-22T13:02:24.669Z] [work-queue] {"queuedWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-22T13:02:24.669Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-09-22T13:02:24.669Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-22T13:02:24.669Z"],"workRunningCount":1}
+[debug] [2023-09-22T13:02:24.669Z] Accepted request GET /sequel-weather-91f3d/us-central1/getWeather --> us-central1-getWeather
+[debug] [2023-09-22T13:02:24.686Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-09-22T13:02:24.686Z] [functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/"}}
+[debug] [2023-09-22T13:02:24.686Z] [worker-pool] Cleaned up workers for us-central1-getWeather: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-getWeather: 1 --> 0"}}
+[debug] [2023-09-22T13:02:24.704Z] [worker-pool] addWorker(us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-getWeather)"}}
+[debug] [2023-09-22T13:02:24.705Z] [worker-pool] Adding worker with key us-central1-getWeather, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-getWeather, total=1"}}
+[debug] [2023-09-22T13:02:26.468Z] [runtime-status] [1399] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1399] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-09-22T13:02:26.470Z] [runtime-status] [1399] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1399] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:02:26.471Z] [runtime-status] [1399] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1399] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-09-22T13:02:26.471Z] [runtime-status] [1399] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1399] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:02:26.756Z] [runtime-status] [1399] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1399] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-09-22T13:02:26.756Z] [runtime-status] [1399] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1399] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-09-22T13:02:26.757Z] [runtime-status] [1399] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1399] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:02:26.758Z] [runtime-status] [1399] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1399] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-09-22T13:02:26.760Z] [runtime-status] [1399] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1399] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:02:26.760Z] [runtime-status] [1399] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1399] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-09-22T13:02:26.767Z] [runtime-status] [1399] Functions runtime initialized. {"cwd":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1399] Functions runtime initialized. {\"cwd\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2023-09-22T13:02:26.767Z] [runtime-status] [1399] Listening to port: /var/folders/1_/hrpgcd7x7tl2_345fm6y6qzc0000gn/T/fire_emu_387a1c02ce5089c2.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1399] Listening to port: /var/folders/1_/hrpgcd7x7tl2_345fm6y6qzc0000gn/T/fire_emu_387a1c02ce5089c2.sock"}}
+[debug] [2023-09-22T13:02:26.836Z] [worker-us-central1-getWeather-d805c603-accb-4b8b-b584-27a2f53cc1e9]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-d805c603-accb-4b8b-b584-27a2f53cc1e9]: IDLE"}}
+[debug] [2023-09-22T13:02:26.837Z] [worker-pool] submitRequest(triggerId=us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getWeather)"}}
 [info] i  functions: Beginning execution of "us-central1-getWeather" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"Beginning execution of \"us-central1-getWeather\""}}
-[debug] [2023-09-21T19:08:04.531Z] [worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: BUSY"}}
-[info] i  functions: Finished "us-central1-getWeather" in 324.407056ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"Finished \"us-central1-getWeather\" in 324.407056ms"}}
-[debug] [2023-09-21T19:08:04.856Z] [worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: IDLE"}}
-[debug] [2023-09-21T19:08:04.857Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2023-09-21T19:18:58.575Z] Received signal SIGHUP 1
-[info]  
-[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
-[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
-[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
-[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
-[debug] [2023-09-21T19:18:58.606Z] [worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: exited"}}
-[debug] [2023-09-21T19:18:58.606Z] [worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-788d5ad8-b567-4df2-b51b-ff6bf42e75c1]: FINISHED"}}
-[warn] ⚠  Emulator UI has exited upon receiving signal: SIGINT 
-[debug] [2023-09-21T19:18:58.609Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.610Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.611Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.613Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.614Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.616Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.621Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.623Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.625Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.627Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.632Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.633Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.634Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.635Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.636Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.637Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.638Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.639Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2023-09-21T19:18:58.641Z] Error: write EIO
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at WriteStream.Socket._writeGeneric (node:net:817:11)
-    at WriteStream.Socket._write (node:net:829:8)
-    at writeOrBuffer (node:internal/streams/writable:389:12)
-    at _write (node:internal/streams/writable:330:10)
-    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
-    at Console.log (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
-    at Console._write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
-    at doWrite (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
-    at writeOrBuffer (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
-    at Console.Writable.write (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
-    at DerivedLogger.ondata (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
-    at DerivedLogger.emit (node:events:539:35)
-    at DerivedLogger.emit (node:domain:475:12)
-    at addChunk (/Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
-[error] 
-[debug] [2023-09-21T19:20:12.488Z] ----------------------------------------------------------------------
-[debug] [2023-09-21T19:20:12.490Z] Command:       /usr/local/bin/firebase /Users/mackachoo/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase emulators:start --only functions
-[debug] [2023-09-21T19:20:12.490Z] CLI Version:   11.28.0
-[debug] [2023-09-21T19:20:12.490Z] Platform:      darwin
-[debug] [2023-09-21T19:20:12.490Z] Node Version:  v16.16.0
-[debug] [2023-09-21T19:20:12.492Z] Time:          Thu Sep 21 2023 21:20:12 GMT+0200 (Central European Summer Time)
-[debug] [2023-09-21T19:20:12.492Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2023-09-21T19:20:12.561Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-09-21T19:20:12.561Z] > authorizing via signed-in user (mackachooo@gmail.com)
-[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
-[debug] [2023-09-21T19:20:13.205Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-09-21T19:20:13.206Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2023-09-21T19:20:13.213Z] [hub] writing locator at /var/folders/1_/hrpgcd7x7tl2_345fm6y6qzc0000gn/T/hub-sequel-weather-91f3d.json
-[debug] [2023-09-21T19:20:13.682Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-09-21T19:20:13.682Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-09-21T19:20:13.683Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
-[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
-[debug] [2023-09-21T19:20:13.686Z] defaultcredentials: writing to file /Users/mackachoo/.config/firebase/mackachooo_gmail_com_application_default_credentials.json
-[debug] [2023-09-21T19:20:13.689Z] Setting GAC to /Users/mackachoo/.config/firebase/mackachooo_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/mackachoo/.config/firebase/mackachooo_gmail_com_application_default_credentials.json"}}
-[debug] [2023-09-21T19:20:13.692Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sequel-weather-91f3d/adminSdkConfig [none]
-[debug] [2023-09-21T19:20:14.430Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sequel-weather-91f3d/adminSdkConfig 200
-[debug] [2023-09-21T19:20:14.430Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sequel-weather-91f3d/adminSdkConfig {"projectId":"sequel-weather-91f3d","databaseURL":"https://sequel-weather-91f3d-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"sequel-weather-91f3d.appspot.com"}
-[debug] [2023-09-21T19:20:14.456Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2023-09-21T19:20:14.457Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2023-09-21T19:20:14.457Z] Starting Emulator UI with command {"binary":"node","args":["/Users/mackachoo/.cache/firebase/emulators/ui-v1.11.5/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/mackachoo/.cache/firebase/emulators/ui-v1.11.5/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
-[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2023-09-21T19:20:14.697Z] Web / API server started at 127.0.0.1:4000
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
-[debug] [2023-09-21T19:20:14.697Z] Web / API server started at ::1:4000
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
-[info] i  functions: Watching "/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions\" for Cloud Functions..."}}
-[debug] [2023-09-21T19:20:14.727Z] Validating nodejs source
-[debug] [2023-09-21T19:20:15.648Z] > [functions] package.json contents: {
+[debug] [2023-09-22T13:02:26.838Z] [worker-us-central1-getWeather-d805c603-accb-4b8b-b584-27a2f53cc1e9]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-d805c603-accb-4b8b-b584-27a2f53cc1e9]: BUSY"}}
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.open-meteo.com/v1/forecast?latitude=51.51&longitude=-0.13&hourly=temperature_2m&current_weather=true"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://api.open-meteo.com/v1/forecast?latitude=51.51&longitude=-0.13&hourly=temperature_2m&current_weather=true\"\n - Be careful, this may be a production service."}}
+[info] i  functions: Finished "us-central1-getWeather" in 463.021393ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"Finished \"us-central1-getWeather\" in 463.021393ms"}}
+[debug] [2023-09-22T13:02:27.301Z] [worker-us-central1-getWeather-d805c603-accb-4b8b-b584-27a2f53cc1e9]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-d805c603-accb-4b8b-b584-27a2f53cc1e9]: IDLE"}}
+[debug] [2023-09-22T13:02:27.302Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-09-22T13:05:25.750Z] File /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/mockapi.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/mockapi.json changed, reloading triggers"}}
+[debug] [2023-09-22T13:05:26.751Z] Validating nodejs source
+[debug] [2023-09-22T13:05:27.916Z] > [functions] package.json contents: {
   "name": "functions",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
@@ -582,32 +251,191 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
   },
   "private": true
 }
-[debug] [2023-09-21T19:20:15.649Z] Building nodejs source
-[debug] [2023-09-21T19:20:15.650Z] Failed to find version of module node: reached end of search path /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules
+[debug] [2023-09-22T13:05:27.917Z] Building nodejs source
+[debug] [2023-09-22T13:05:27.917Z] Failed to find version of module node: reached end of search path /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules
 [warn] ⚠  functions: You've requested "node" version "18", but the standalone Firebase CLI comes with bundled Node "16". 
 [info] ✔  functions: To use a different Node.js version, consider removing the standalone Firebase CLI and switching to "firebase-tools" on npm. 
-[debug] [2023-09-21T19:20:15.653Z] Could not find functions.yaml. Must use http discovery
-[debug] [2023-09-21T19:20:15.660Z] Found firebase-functions binary at '/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/.bin/firebase-functions'
-[debug] [2023-09-21T19:20:16.322Z] Serving at port 8115
+[debug] [2023-09-22T13:05:27.919Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-09-22T13:05:27.922Z] Found firebase-functions binary at '/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-09-22T13:05:28.608Z] Serving at port 8438
 
-[debug] [2023-09-21T19:20:16.687Z] Got response from /__/functions.yaml {"endpoints":{"getWeather":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"getWeather"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[debug] [2023-09-21T19:20:16.694Z] shutdown requested via /__/quitquitquit
+[debug] [2023-09-22T13:05:29.068Z] Got response from /__/functions.yaml {"endpoints":{"getWeather":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"getWeather"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-09-22T13:05:29.074Z] shutdown requested via /__/quitquitquit
 
 [info] ✔  functions: Loaded functions definitions from source: getWeather. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getWeather."}}
-[info] ✔  functions[us-central1-getWeather]: http function initialized (http://127.0.0.1:5001/sequel-weather-91f3d/us-central1/getWeather). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/sequel-weather-91f3d/us-central1/getWeather)."}}
-[info] 
-┌─────────────────────────────────────────────────────────────┐
-│ ✔  All emulators ready! It is now safe to connect your app. │
-│ i  View Emulator UI at http://127.0.0.1:4000/               │
-└─────────────────────────────────────────────────────────────┘
+[debug] [2023-09-22T13:05:29.099Z] [worker-pool] Shutting down IDLE worker (us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-getWeather)"}}
+[debug] [2023-09-22T13:05:29.099Z] [worker-us-central1-getWeather-d805c603-accb-4b8b-b584-27a2f53cc1e9]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-d805c603-accb-4b8b-b584-27a2f53cc1e9]: FINISHING"}}
+[debug] [2023-09-22T13:05:29.116Z] [worker-us-central1-getWeather-d805c603-accb-4b8b-b584-27a2f53cc1e9]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-d805c603-accb-4b8b-b584-27a2f53cc1e9]: exited"}}
+[debug] [2023-09-22T13:05:29.116Z] [worker-us-central1-getWeather-d805c603-accb-4b8b-b584-27a2f53cc1e9]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-d805c603-accb-4b8b-b584-27a2f53cc1e9]: FINISHED"}}
+[debug] [2023-09-22T13:09:45.746Z] [work-queue] {"queuedWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-22T13:09:45.746Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-09-22T13:09:45.746Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sequel-weather-91f3d/us-central1/getWeather-2023-09-22T13:09:45.746Z"],"workRunningCount":1}
+[debug] [2023-09-22T13:09:45.746Z] Accepted request GET /sequel-weather-91f3d/us-central1/getWeather --> us-central1-getWeather
+[debug] [2023-09-22T13:09:45.747Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-09-22T13:09:45.748Z] [functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sequel-weather-91f3d/us-central1/getWeather, mapping to path=/"}}
+[debug] [2023-09-22T13:09:45.748Z] [worker-pool] Cleaned up workers for us-central1-getWeather: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-getWeather: 1 --> 0"}}
+[debug] [2023-09-22T13:09:45.755Z] [worker-pool] addWorker(us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-getWeather)"}}
+[debug] [2023-09-22T13:09:45.756Z] [worker-pool] Adding worker with key us-central1-getWeather, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-getWeather, total=1"}}
+[debug] [2023-09-22T13:09:47.452Z] [runtime-status] [1663] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1663] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-09-22T13:09:47.455Z] [runtime-status] [1663] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1663] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:09:47.455Z] [runtime-status] [1663] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1663] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-09-22T13:09:47.456Z] [runtime-status] [1663] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1663] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:09:47.861Z] [runtime-status] [1663] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1663] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-09-22T13:09:47.861Z] [runtime-status] [1663] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1663] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-09-22T13:09:47.862Z] [runtime-status] [1663] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1663] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:09:47.863Z] [runtime-status] [1663] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1663] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-09-22T13:09:47.866Z] [runtime-status] [1663] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1663] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-09-22T13:09:47.867Z] [runtime-status] [1663] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.10.1","resolution":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1663] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-09-22T13:09:47.873Z] [runtime-status] [1663] Functions runtime initialized. {"cwd":"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1663] Functions runtime initialized. {\"cwd\":\"/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2023-09-22T13:09:47.873Z] [runtime-status] [1663] Listening to port: /var/folders/1_/hrpgcd7x7tl2_345fm6y6qzc0000gn/T/fire_emu_b5e07ebe859c020e.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[runtime-status] [1663] Listening to port: /var/folders/1_/hrpgcd7x7tl2_345fm6y6qzc0000gn/T/fire_emu_b5e07ebe859c020e.sock"}}
+[debug] [2023-09-22T13:09:47.975Z] [worker-us-central1-getWeather-7aa922b6-047b-43d3-a92a-d962f2e127a8]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-7aa922b6-047b-43d3-a92a-d962f2e127a8]: IDLE"}}
+[debug] [2023-09-22T13:09:47.975Z] [worker-pool] submitRequest(triggerId=us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getWeather)"}}
+[info] i  functions: Beginning execution of "us-central1-getWeather" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"Beginning execution of \"us-central1-getWeather\""}}
+[debug] [2023-09-22T13:09:47.976Z] [worker-us-central1-getWeather-7aa922b6-047b-43d3-a92a-d962f2e127a8]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-7aa922b6-047b-43d3-a92a-d962f2e127a8]: BUSY"}}
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.open-meteo.com/v1/forecast?latitude=51.51&longitude=-0.13&hourly=temperature_2m&current_weather=true"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://api.open-meteo.com/v1/forecast?latitude=51.51&longitude=-0.13&hourly=temperature_2m&current_weather=true\"\n - Be careful, this may be a production service."}}
+[info] i  functions: Finished "us-central1-getWeather" in 419.664403ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"Finished \"us-central1-getWeather\" in 419.664403ms"}}
+[debug] [2023-09-22T13:09:48.396Z] [worker-us-central1-getWeather-7aa922b6-047b-43d3-a92a-d962f2e127a8]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-7aa922b6-047b-43d3-a92a-d962f2e127a8]: IDLE"}}
+[debug] [2023-09-22T13:09:48.396Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-09-22T13:18:21.974Z] File /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/lib/index.js changed, reloading triggers"}}
+[debug] [2023-09-22T13:18:22.975Z] Validating nodejs source
+[debug] [2023-09-22T13:18:24.160Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "got": "^13.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2023-09-22T13:18:24.160Z] Building nodejs source
+[debug] [2023-09-22T13:18:24.160Z] Failed to find version of module node: reached end of search path /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules
+[warn] ⚠  functions: You've requested "node" version "18", but the standalone Firebase CLI comes with bundled Node "16". 
+[info] ✔  functions: To use a different Node.js version, consider removing the standalone Firebase CLI and switching to "firebase-tools" on npm. 
+[debug] [2023-09-22T13:18:24.163Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-09-22T13:18:24.166Z] Found firebase-functions binary at '/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-09-22T13:18:24.809Z] Serving at port 8482
 
-┌───────────┬────────────────┬─────────────────────────────────┐
-│ Emulator  │ Host:Port      │ View in Emulator UI             │
-├───────────┼────────────────┼─────────────────────────────────┤
-│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
-└───────────┴────────────────┴─────────────────────────────────┘
-  Emulator Hub running at 127.0.0.1:4400
-  Other reserved ports: 4500
+[debug] [2023-09-22T13:18:25.241Z] Got response from /__/functions.yaml {"endpoints":{"getWeather":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"getWeather"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-09-22T13:18:25.249Z] shutdown requested via /__/quitquitquit
 
-Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
- 
+[info] ✔  functions: Loaded functions definitions from source: getWeather. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getWeather."}}
+[debug] [2023-09-22T13:18:25.282Z] [worker-pool] Shutting down IDLE worker (us-central1-getWeather) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-getWeather)"}}
+[debug] [2023-09-22T13:18:25.283Z] [worker-us-central1-getWeather-7aa922b6-047b-43d3-a92a-d962f2e127a8]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-7aa922b6-047b-43d3-a92a-d962f2e127a8]: FINISHING"}}
+[debug] [2023-09-22T13:18:25.302Z] [worker-us-central1-getWeather-7aa922b6-047b-43d3-a92a-d962f2e127a8]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-7aa922b6-047b-43d3-a92a-d962f2e127a8]: exited"}}
+[debug] [2023-09-22T13:18:25.303Z] [worker-us-central1-getWeather-7aa922b6-047b-43d3-a92a-d962f2e127a8]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getWeather"},"extension":{},"message":"[worker-us-central1-getWeather-7aa922b6-047b-43d3-a92a-d962f2e127a8]: FINISHED"}}
+[debug] [2023-09-22T13:20:01.063Z] File /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/mockapi.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/mockapi.json changed, reloading triggers"}}
+[debug] [2023-09-22T13:20:02.064Z] Validating nodejs source
+[debug] [2023-09-22T13:20:03.524Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "got": "^13.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2023-09-22T13:20:03.524Z] Building nodejs source
+[debug] [2023-09-22T13:20:03.524Z] Failed to find version of module node: reached end of search path /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules
+[warn] ⚠  functions: You've requested "node" version "18", but the standalone Firebase CLI comes with bundled Node "16". 
+[info] ✔  functions: To use a different Node.js version, consider removing the standalone Firebase CLI and switching to "firebase-tools" on npm. 
+[debug] [2023-09-22T13:20:03.526Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-09-22T13:20:03.528Z] Found firebase-functions binary at '/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-09-22T13:20:04.076Z] Serving at port 8030
+
+[debug] [2023-09-22T13:20:04.332Z] Got response from /__/functions.yaml {"endpoints":{"getWeather":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"getWeather"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-09-22T13:20:04.337Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: getWeather. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getWeather."}}
+[debug] [2023-09-22T13:20:08.389Z] File /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/mockapi.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/mockapi.json changed, reloading triggers"}}
+[debug] [2023-09-22T13:20:09.390Z] Validating nodejs source
+[debug] [2023-09-22T13:20:10.609Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "got": "^13.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2023-09-22T13:20:10.610Z] Building nodejs source
+[debug] [2023-09-22T13:20:10.610Z] Failed to find version of module node: reached end of search path /Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules
+[warn] ⚠  functions: You've requested "node" version "18", but the standalone Firebase CLI comes with bundled Node "16". 
+[info] ✔  functions: To use a different Node.js version, consider removing the standalone Firebase CLI and switching to "firebase-tools" on npm. 
+[debug] [2023-09-22T13:20:10.612Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-09-22T13:20:10.613Z] Found firebase-functions binary at '/Users/mackachoo/Documents/GitHub/Sequel-Weather/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-09-22T13:20:11.251Z] Serving at port 8938
+
+[debug] [2023-09-22T13:20:11.577Z] Got response from /__/functions.yaml {"endpoints":{"getWeather":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"getWeather"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-09-22T13:20:11.582Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: getWeather. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getWeather."}}
