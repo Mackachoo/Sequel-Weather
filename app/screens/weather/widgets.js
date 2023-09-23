@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { FontAwesome, MaterialCommunityIcons } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 import Sun from '../../assets/weather/Sun.svg'
 import Cloudy from '../../assets/weather/Cloudy.svg'
 import PartlyCloudy from '../../assets/weather/PartlyCloudy.svg'
@@ -12,11 +12,24 @@ import Snow from '../../assets/weather/Snow.svg'
 import Thunder from '../../assets/weather/Thunder.svg'
 import Showers from '../../assets/weather/Showers.svg'
 
+export const LocalTime = ({ data }) => {
+    if (data) {
+        let time = (data.current_weather.time).split("T");
+        // console.log(`Lat: ${data.latitude}, Lng: ${data.longitude}`)
+        return (
+            <Text style={{ textAlign: 'right', fontSize: 12, color: data.current_weather.is_day == 1 ? '#282133' : '#D5AC78' }}>
+                @ {time[1]} {time[0].replaceAll("-", "/")}
+            </Text >
+        );
+    }
+};
 
 export const Temperature = ({ data }) => {
     if (data) {
         return (
-            <Text style={{ textAlign: 'center', fontSize: 48, color: data.current_weather.is_day == 1 ? '#282133' : '#d5e3f5' }}> {data.current_weather.temperature} °C</Text >
+            <Text style={{ textAlign: 'center', fontSize: 48, color: data.current_weather.is_day == 1 ? 'black' : 'white' }}>
+                {data.current_weather.temperature} °C
+            </Text >
         );
     }
 };
@@ -26,16 +39,12 @@ export const WindSpeed = ({ data }) => {
         let angle = data.current_weather.winddirection - 45;
         return (
             <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
-                {/* <MaterialCommunityIcons name='windsock'
-                    size={24}
-                    color={data.current_weather.is_day == 1 ? '#282133' : '#D5AC78'}
-                /> */}
                 <FontAwesome name='location-arrow'
                     size={24}
                     style={{ transform: [{ rotate: `${angle}deg` }] }}
                     color={data.current_weather.is_day == 1 ? '#282133' : '#D5AC78'}
                 />
-                <Text style={[{ textAlign: 'center', fontSize: 24, color: data.current_weather.is_day == 1 ? '#282133' : '#D5AC78' }]}> {data.current_weather.windspeed} mph</Text >
+                <Text style={[{ textAlign: 'center', fontSize: 24, color: data.current_weather.is_day == 1 ? '#282133' : '#D5AC78' }]}> {data.current_weather.windspeed} Km/h</Text >
 
             </View>
         );

@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
-import { ImageBackground, Pressable, StyleSheet, Text, View } from 'react-native';
+import React, { useMemo, useState } from 'react';
+import { Dimensions, ImageBackground, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { FontAwesome } from "@expo/vector-icons";
-import { Temperature, WeatherSymbol, WindSpeed } from './widgets';
+import { LocalTime, Temperature, WeatherSymbol, WindSpeed } from './widgets';
 import { BlurView } from 'expo-blur';
+import { DailyGraph, HourlyGraph } from './graphs';
 
 export default function WeatherScreen() {
     const [weather, setWeather] = useState(null);
+    const [location, setLocation] = useState(null);
 
     const fetchWeather = async () => {
         try {
             // Fetch weather data from your Firebase function
             const response = await fetch(
-                'http://127.0.0.1:5001/sequel-weather-91f3d/us-central1/getWeather'
+                `http://127.0.0.1:5001/sequel-weather-91f3d/us-central1/getWeatherAtLocation?address=${location}`,
             );
 
             if (response.ok) {
@@ -19,6 +21,7 @@ export default function WeatherScreen() {
                 // console.log('Weather Data:', data);
                 setWeather(data)
             } else {
+                alert("Unknown Location\n Please try again.")
                 console.error('Failed to fetch weather data');
             }
         } catch (error) {
@@ -26,41 +29,56 @@ export default function WeatherScreen() {
         }
     };
 
-    const RefreshButton = () => {
+    const LocationForm = useMemo(() => {
         return (
-            <Pressable style={{ margin: 20 }} onPress={fetchWeather} >
-                <FontAwesome
-                    name='refresh'
-                    size={36}
-                    color={'#282133'}
+            <View style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: '#434D59', opacity: 0.8, }}>
+                <TextInput
+                    style={{ padding: 10, height: 40, width: Dimensions.get("window").width * 0.8, color: '#E6D2B9' }}
+                    placeholder="Enter location here..."
+                    placeholderTextColor='#E6D2B9'
+                    onChangeText={(text) => setLocation(text)}
+                    onSubmitEditing={fetchWeather}
+                    value={location}
                 />
-            </Pressable>
+
+                <Pressable style={{ margin: 10 }} onPress={fetchWeather} >
+                    <FontAwesome
+                        name='search'
+                        size={30}
+                        color={'#E6D2B9'}
+                    />
+                </Pressable>
+            </View >
         );
-    }
+    }, [location]);
 
     if (weather) {
         return (
             <ImageBackground source={weather.current_weather.is_day == 1 ? require('../../assets/day.png') : require('../../assets/night.png')} resizeMode="cover" style={{ flex: 1, justifyContent: 'center', }}>
-                <View style={[styles.container]}>
-                    <BlurView intensity={45} tint='dark' style={styles.blur}>
-                        <View>
-                            <Temperature data={weather} />
-                            <WindSpeed data={weather} />
-                        </View>
-                        <WeatherSymbol data={weather} size={100} />
-                    </BlurView>
-                    <RefreshButton />
-                </View>
+                <ScrollView>
+                    <View style={[styles.container, { gap: 20 }]}>
+                        {LocationForm}
+                        <BlurView intensity={45} tint='dark' style={styles.blur}>
+                            <View style={{ flexDirection: 'row', }}>
+                                <View>
+                                    <Temperature data={weather} />
+                                    <WindSpeed data={weather} />
+                                </View>
+                                <WeatherSymbol data={weather} size={100} />
+                            </View>
+                            <LocalTime data={weather} />
+                        </BlurView>
+                        <HourlyGraph data={weather} />
+                        <DailyGraph data={weather} />
+                    </View>
+                </ScrollView>
             </ImageBackground>
         );
     } else {
         return (
-            <ImageBackground source={require('../../assets/neutral.jpeg')} resizeMode="cover" style={{ flex: 1, justifyContent: 'center', }}>
+            <ImageBackground source={require('../../assets/neutral.png')} resizeMode="cover" style={{ flex: 1, justifyContent: 'center', }}>
                 <View style={[styles.container]}>
-                    <BlurView intensity={45} tint='dark' style={styles.blur}>
-                        <Text style={{ fontSize: 24, }}>No Weather Data</Text>
-                    </BlurView>
-                    <RefreshButton />
+                    {LocationForm}
                 </View>
             </ImageBackground>
         );
@@ -70,14 +88,15 @@ export default function WeatherScreen() {
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 200,
-        padding: 20,
+        paddingTop: 60,
+        paddingBottom: 40,
+        paddingHorizontal: 20,
         flex: 1,
-        justifyContent: 'space-between',
+        gap: 20,
         alignItems: 'center',
     },
     blur: {
-        flexDirection: 'row',
+
         paddingHorizontal: 20,
         paddingVertical: 10,
         borderRadius: 25,
@@ -85,7 +104,8 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.5,
         shadowRadius: 10,
         elevation: 2,
-
+        width: Dimensions.get("window").width * 0.8,
+        justifyContent: 'space-evenly'
     },
 });
 
