@@ -19,13 +19,28 @@ This is a simple weather app that shows the weather in London, including a detai
 
 ## 🚀 How to run
 
-- Create a firebase project (don’t worry, it is free) [Firebase Console](https://console.firebase.google.com/)
-- Install the firebase [cli](https://firebase.google.com/docs/cli)
-- Log in to your google account you created the project with using `firebase login`
-- Run `firebase projects:list`
-- Copy the `project-id` of the project you created.
-- Run `firebase use --add project-id`
-- Go to `app/firebase.ts` and change the `firebaseConfig` to that of the firebase project you just created.
+- In the app folder you need to create a `.keys.js` file with the following code in (filling in your firebase info)
+
+  ```javascript
+  let firebaseKeys = {
+      apiKey: '',
+      authDomain: '',
+      databaseURL: '',
+      projectId: '',
+      storageBucket: '',
+      messagingSenderId: '',
+      appId: '',
+      measurementId: '',
+  };
+
+  export default firebaseKeys;
+  ```
+- In the functions folder, you need to create a `.keys.ts` file with the following code in (filling in your GCP Geocoding API Key)
+
+  ```typescript
+  let geoAPIKey: string = '';
+  export default geoAPIKey;
+  ```
 - To start the app, run `npm install`, `npm run ios` or `npm run android` from the `/app` folder
 - To start the local emulator, run `npm install`, `npm run serve` from the `/functions` folder
 
@@ -35,3 +50,9 @@ This is a simple weather app that shows the weather in London, including a detai
 * `react-native-svg` - for use of SVG icons of the weather state.
 * `react-native-svg-transformer` - for use of SVG icons of the weather state.
 * `react-native-chart-kit` - for creating graphs to show the weather over time
+
+
+
+letgeoAPIKey:string='AIzaSyAseRoEdbXy627UejN9haEAKPBpGnQhPpE';
+
+exportdefaultgeoAPIKey;

@@ -1,6 +1,7 @@
 import * as functions from "firebase-functions";
 import * as http from "node:http";
 import * as https from "node:https";
+import geoAPIKey from '../.keys'
 
 const { Client } = require("@googlemaps/google-maps-services-js");
 
@@ -12,7 +13,7 @@ async function fetchCoordinates(address: string) {
     const response = await geocodingClient.geocode({
       params: {
         address: address,
-        key: "AIzaSyC1iip1NX10yNUMpkA_Fi9yr4YJv7zclEU",
+        key: geoAPIKey,
       },
     });
 
