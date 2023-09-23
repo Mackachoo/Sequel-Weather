@@ -13,7 +13,7 @@ This is a simple weather app that shows the weather in London, including a detai
 
 [Showcase Video](readme/Showcase.mov "~1min .mov")
 
-| ![1695498854667](image/README/1695498854667.png) | ![1695498862623](image/README/1695498862623.png) | ![1695498869513](image/README/1695498869513.png) | ![1695498875399](image/README/1695498875399.png) | ![1695498881922](image/README/1695498881922.png) |
+| ![Splash](readme/SplashPage.png) | ![London](readme/WeatherLondon.png) | ![Day](readme/WeatherDay.png) | ![Night](readme/WeatherNight.png) | ![Workable](readme/WorkablePage.png) |
 | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
 |                   Spash page                   |               Weather in London               |             Weather during the day             |            Weather during the night            |                 Workable page                 |
 
