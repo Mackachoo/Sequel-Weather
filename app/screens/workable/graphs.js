@@ -26,11 +26,9 @@ export const WorkableGraph = ({ data, parameters }) => {
                 numParams++
             }
         }
-
-        console.log(results);
-        results = results.map((element) => element * 2 / numParams - 1);
-        console.log(results);
-
+        if (numParams != 0) {
+            results = results.map((element) => element * 2 / numParams - 1);
+        }
 
         const line = {
             labels: data.hourly.time.map((val) => { // Formats time correctly and removes every odd entry
@@ -55,7 +53,7 @@ export const WorkableGraph = ({ data, parameters }) => {
 
         return (
             <BlurView intensity={45} tint='dark' style={[styles.blur, { flexDirection: 'column', backgroundColor: data.current_weather.is_day == 1 ? 'rgba(233, 192, 160, 0.6)' : 'rgba(40, 33, 51, 0.6)' }]}>
-                <Text style={{ paddingHorizontal: 20, paddingTop: 10, color: data.current_weather.is_day == 1 ? '#282133' : '#D5AC78' }}>Temperature Today</Text>
+                <Text style={{ paddingHorizontal: 20, paddingTop: 10, color: data.current_weather.is_day == 1 ? '#282133' : '#D5AC78' }}>Workable Today</Text>
                 <LineChart
                     data={line}
                     width={Dimensions.get("window").width * 0.8} // from react-native

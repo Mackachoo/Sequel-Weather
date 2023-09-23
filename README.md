@@ -1,4 +1,4 @@
-# Frontend Task
+# Workable Weather - Frontend Task
 
 <p>
   <!-- iOS -->
@@ -7,28 +7,18 @@
   <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
 </p>
 
-## Instructions
+## 🔮 Description
 
-### What to build
+This is a simple weather app that shows the weather in London, including a detailed graph for temperature over the day and the next 7 days. You can also search for different locations to get the weather all over the world, this was done using GCP Geocoding API. The second page called workable allows a user to pick weather limits, such as a maximum wind speed, and it will tell you what time of the day would fall within these limits. This would be useful for weather dependant any weather dependent activities.
 
-You are building a minimal weather app.
+[Showcase Video](Showcase.mov "~1min .mov")
 
-At a minimum the app should have a single button. Pressing this button should call a [firebase cloud function](https://firebase.google.com/docs/functions).
-The firebase function is already implemented, you only need to call this from the app.
+| ![1695498854667](image/README/1695498854667.png) | ![1695498862623](image/README/1695498862623.png) | ![1695498869513](image/README/1695498869513.png) | ![1695498875399](image/README/1695498875399.png) | ![1695498881922](image/README/1695498881922.png) |
+| :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+|                   Spash page                   |               Weather in London               |             Weather during the day             |            Weather during the night            |                 Workable page                 |
 
-After clicking the button, the app should show the current temperature in London.
+## 🚀 How to run
 
-Any packages you choose to add will need to be motivated, make sure to include strong reasoning for why you chose to add any third party library.
-
-### Example
-Here is an example of how the App could look: [Figma Prototype](https://www.figma.com/proto/wZ16lZpnhJmgYh3LJ0AihI/Interview-Task?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2). Some assets are included in `/app/assets/weather-images/`.
-
-### Advanced
-Feel free to expand on the app's functionality and design, as long as you meet the MVP requirements shown in the prototype in the example section.
-Show us what you can do.
-
-
-### 🚀 How to run
 - Create a firebase project (don’t worry, it is free) [Firebase Console](https://console.firebase.google.com/)
 - Install the firebase [cli](https://firebase.google.com/docs/cli)
 - Log in to your google account you created the project with using `firebase login`
@@ -38,3 +28,10 @@ Show us what you can do.
 - Go to `app/firebase.ts` and change the `firebaseConfig` to that of the firebase project you just created.
 - To start the app, run `npm install`, `npm run ios` or `npm run android` from the `/app` folder
 - To start the local emulator, run `npm install`, `npm run serve` from the `/functions` folder
+
+### Dependencies
+
+* `expo-blur` - for the blur effect that was used in the design.
+* `react-native-svg` - for use of SVG icons of the weather state.
+* `react-native-svg-transformer` - for use of SVG icons of the weather state.
+* `react-native-chart-kit` - for creating graphs to show the weather over time

@@ -36,42 +36,6 @@ export default function WorkableScreen() {
     const [windspeed, setWindspeed] = useState(null);
 
 
-    const ParametersForm = useMemo(() => {
-        return (
-            <View style={{ alignItems: 'center' }}>
-                <View style={styles.parameters}>
-                    <Text style={{ color: '#E6D2B9' }}>Temperature:</Text>
-                    <TextInput
-                        style={{ padding: 10, height: 40, color: '#E6D2B9' }}
-                        placeholder="Minimum"
-                        placeholderTextColor='#E6D2B9'
-                        onChangeText={(text) => setMinTemperature(text)}
-                        value={minTemperature}
-                    />
-                    <Text style={{ color: '#E6D2B9' }}>{'<'}</Text>
-                    <TextInput
-                        style={{ padding: 10, height: 40, color: '#E6D2B9' }}
-                        placeholder="Maximum"
-                        placeholderTextColor='#E6D2B9'
-                        onChangeText={(text) => setMaxTemperature(text)}
-                        value={maxTemperature}
-                    />
-                </View>
-                <View style={styles.parameters}>
-                    <Text style={{ color: '#E6D2B9' }}>Max Windspeed:</Text>
-                    <TextInput
-                        style={{ padding: 10, height: 40, color: '#E6D2B9' }}
-                        placeholder="Km/h"
-                        placeholderTextColor='#E6D2B9'
-                        onChangeText={(text) => setWindspeed(text)}
-                        value={windspeed}
-                    />
-                </View>
-
-            </View >
-        );
-    }, [location]);
-
     const LocationForm = useMemo(() => {
         return (
             <View style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: '#434D59', opacity: 0.8, }}>
@@ -96,6 +60,47 @@ export default function WorkableScreen() {
         );
     }, [location]);
 
+    const ParametersForm = useMemo(() => {
+        return (
+            <View style={{ alignItems: 'center', gap: -10 }}>
+                <View style={styles.parameters}>
+                    <Text style={{ color: '#E6D2B9' }}>Temperature:</Text>
+                    <TextInput
+                        style={{ paddingHorizontal: 10, height: 40, color: '#E6D2B9' }}
+                        placeholder="Minimum"
+                        keyboardType='numeric'
+                        placeholderTextColor='#E6D2B9'
+                        onChangeText={(text) => setMinTemperature(text)}
+                        value={minTemperature}
+                    />
+                    <Text style={{ color: '#E6D2B9' }}>{'<'}</Text>
+                    <TextInput
+                        style={{ paddingHorizontal: 10, height: 40, color: '#E6D2B9' }}
+                        placeholder="Maximum"
+                        keyboardType='numeric'
+                        placeholderTextColor='#E6D2B9'
+                        onChangeText={(text) => setMaxTemperature(text)}
+                        value={maxTemperature}
+                    />
+                    <Text style={{ color: '#E6D2B9' }}>(°C)</Text>
+                </View>
+                <View style={styles.parameters}>
+                    <Text style={{ color: '#E6D2B9' }}>Max Windspeed:</Text>
+                    <TextInput
+                        style={{ paddingHorizontal: 10, height: 40, color: '#E6D2B9' }}
+                        placeholder="Maximum"
+                        keyboardType='numeric'
+                        placeholderTextColor='#E6D2B9'
+                        onChangeText={(text) => setWindspeed(text)}
+                        value={windspeed}
+                    />
+                    <Text style={{ color: '#E6D2B9' }}>(Km/h)</Text>
+                </View>
+
+            </View >
+        );
+    }, [location]);
+
     if (weather) {
         return (
             <ImageBackground source={require('../../assets/neutral.png')} resizeMode="cover" style={{ flex: 1, justifyContent: 'center', }}>
@@ -103,7 +108,7 @@ export default function WorkableScreen() {
                     {LocationForm}
                     <WorkableGraph data={weather} parameters={{ minTemperature, maxTemperature, windspeed }} />
                     <BlurView intensity={45} tint='dark' style={[styles.blur, { flexDirection: 'column' }]}>
-                        <Text style={{ fontSize: 20, color: '#E6D2B9' }}>Workable in {location}</Text>
+                        <Text style={{ fontSize: 16, color: '#E6D2B9', textAlign: 'center' }}>Choose weather limits... </Text>
                         {ParametersForm}
                     </BlurView>
                 </View>

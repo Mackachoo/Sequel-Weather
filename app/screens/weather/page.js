@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Dimensions, ImageBackground, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Button, Dimensions, ImageBackground, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { FontAwesome } from "@expo/vector-icons";
 import { LocalTime, Temperature, WeatherSymbol, WindSpeed } from './widgets';
 import { BlurView } from 'expo-blur';
@@ -9,11 +9,11 @@ export default function WeatherScreen() {
     const [weather, setWeather] = useState(null);
     const [location, setLocation] = useState(null);
 
-    const fetchWeather = async () => {
+    const fetchWeather = async (loc) => {
         try {
             // Fetch weather data from your Firebase function
             const response = await fetch(
-                `http://127.0.0.1:5001/sequel-weather-91f3d/us-central1/getWeatherAtLocation?address=${location}`,
+                `http://127.0.0.1:5001/sequel-weather-91f3d/us-central1/getWeatherAtLocation?address=${loc ? loc : location}`,
             );
 
             if (response.ok) {
@@ -79,6 +79,11 @@ export default function WeatherScreen() {
             <ImageBackground source={require('../../assets/neutral.png')} resizeMode="cover" style={{ flex: 1, justifyContent: 'center', }}>
                 <View style={[styles.container]}>
                     {LocationForm}
+                    <View style={{ width: 200, backgroundColor: '#434D59', opacity: 0.8, }}>
+                        <Button title='Weather in London' color="#E6D2B9" onPress={() => {
+                            fetchWeather("London");
+                        }} />
+                    </View>
                 </View>
             </ImageBackground>
         );
