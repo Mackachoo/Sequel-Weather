@@ -14,35 +14,40 @@ This is a simple weather app that shows the weather in London, including a detai
 [Showcase Video](readme/Showcase.mov "~1min .mov")
 
 | ![Splash](readme/SplashPage.png) | ![London](readme/WeatherLondon.png) | ![Day](readme/WeatherDay.png) | ![Night](readme/WeatherNight.png) | ![Workable](readme/WorkablePage.png) |
-| :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-|                   Spash page                   |               Weather in London               |             Weather during the day             |            Weather during the night            |                 Workable page                 |
+| :----------------------------: | :-------------------------------: | :-------------------------: | :-----------------------------: | :--------------------------------: |
+|           Spash page           |         Weather in London         |   Weather during the day   |    Weather during the night    |           Workable page           |
 
 ## 🚀 How to run
 
-- In the app folder you need to create a `.keys.js` file with the following code in (filling in your firebase info)
+### Local App
 
-  ```javascript
-  let firebaseKeys = {
-      apiKey: '',
-      authDomain: '',
-      databaseURL: '',
-      projectId: '',
-      storageBucket: '',
-      messagingSenderId: '',
-      appId: '',
-      measurementId: '',
-  };
+1. In the app folder you need to create a `.keys.js` file with the following code in (filling in your firebase info)
 
-  export default firebaseKeys;
-  ```
-- In the functions folder, you need to create a `.keys.ts` file with the following code in (filling in your GCP Geocoding API Key)
+   ```javascript
+   let firebaseKeys = {
+       apiKey: '',
+       authDomain: '',
+       databaseURL: '',
+       projectId: '',
+       storageBucket: '',
+       messagingSenderId: '',
+       appId: '',
+       measurementId: '',
+   };
 
-  ```typescript
-  let geoAPIKey: string = '';
-  export default geoAPIKey;
-  ```
-- To start the app, run `npm install`, `npm run ios` or `npm run android` from the `/app` folder
-- To start the local emulator, run `npm install`, `npm run serve` from the `/functions` folder
+   export default firebaseKeys;
+   ```
+2. To start the app, run `npm install`, `npm run ios` or `npm run android` from the `/app` folder
+
+### Local Functions
+
+1. In the functions folder, you need to create a `.keys.ts` file with the following code in (filling in your GCP Geocoding API Key)
+
+   ```typescript
+   let geoAPIKey: string = '';
+   export default geoAPIKey;
+   ```
+2. To start the local emulator, run `npm install`, `npm run serve` from the `/functions` folder
 
 ### Dependencies
 
