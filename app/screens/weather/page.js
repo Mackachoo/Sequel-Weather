@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { ImageBackground, Pressable, StyleSheet, Text, View } from 'react-native';
 import { FontAwesome } from "@expo/vector-icons";
-import { Temperature, WindSpeed } from './widgets';
-
+import { Temperature, WeatherSymbol, WindSpeed } from './widgets';
+import { BlurView } from 'expo-blur';
 
 export default function WeatherScreen() {
     const [weather, setWeather] = useState(null);
@@ -32,7 +32,7 @@ export default function WeatherScreen() {
                 <FontAwesome
                     name='refresh'
                     size={36}
-                    color={'#4D709E'}
+                    color={'#282133'}
                 />
             </Pressable>
         );
@@ -40,20 +40,29 @@ export default function WeatherScreen() {
 
     if (weather) {
         return (
-            <View style={styles.container}>
-                <View>
-                    <Temperature data={weather} />
-                    <WindSpeed data={weather} />
+            <ImageBackground source={weather.current_weather.is_day == 1 ? require('../../assets/day.png') : require('../../assets/night.png')} resizeMode="cover" style={{ flex: 1, justifyContent: 'center', }}>
+                <View style={[styles.container]}>
+                    <BlurView intensity={45} tint='dark' style={styles.blur}>
+                        <View>
+                            <Temperature data={weather} />
+                            <WindSpeed data={weather} />
+                        </View>
+                        <WeatherSymbol data={weather} size={100} />
+                    </BlurView>
+                    <RefreshButton />
                 </View>
-                <RefreshButton />
-            </View>
+            </ImageBackground>
         );
     } else {
         return (
-            <View style={styles.container}>
-                <Text style={{ fontSize: 24, }}>No Weather Data</Text>
-                <RefreshButton />
-            </View>
+            <ImageBackground source={require('../../assets/neutral.jpeg')} resizeMode="cover" style={{ flex: 1, justifyContent: 'center', }}>
+                <View style={[styles.container]}>
+                    <BlurView intensity={45} tint='dark' style={styles.blur}>
+                        <Text style={{ fontSize: 24, }}>No Weather Data</Text>
+                    </BlurView>
+                    <RefreshButton />
+                </View>
+            </ImageBackground>
         );
 
     }
@@ -61,11 +70,22 @@ export default function WeatherScreen() {
 
 const styles = StyleSheet.create({
     container: {
+        paddingTop: 200,
         padding: 20,
         flex: 1,
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#E6F1FF',
+    },
+    blur: {
+        flexDirection: 'row',
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        borderRadius: 25,
+        shadowColor: '#000',
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
+        elevation: 2,
+
     },
 });
 
