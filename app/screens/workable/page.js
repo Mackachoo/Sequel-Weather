@@ -12,7 +12,7 @@ export default function WorkableScreen() {
         try {
             // Fetch weather data from your Firebase function
             const response = await fetch(
-                `http://127.0.0.1:5001/sequel-weather-91f3d/us-central1/getWeatherAtLocation?address=${location}`,
+                `https://us-central1-sequel-weather-91f3d.cloudfunctions.net/getWeatherAtLocation?address=${location}`,
             );
 
             if (response.ok) {
