@@ -9,7 +9,7 @@
 
 ## 🔮 Description
 
-This is a simple weather app that shows the weather in London, including a detailed graph for temperature over the day and the next 7 days. You can also search for different locations to get the weather all over the world, this was done using GCP Geocoding API. The second page called workable allows a user to pick weather limits, such as a maximum wind speed, and it will tell you what time of the day would fall within these limits. This would be useful for weather dependant any weather dependent activities.
+This is a simple weather app that shows the weather in London, including a detailed graph for temperature over the day and the next 7 days. You can also search for different locations to get the weather all over the world, this was done using GCP Geocoding API. The second page called workable allows a user to pick weather limits, such as a maximum wind speed, and it will tell you what time of the day would fall within these limits. This would be useful for any weather dependent activities.
 
 [Showcase Video](readme/Showcase.mov "~1min .mov")
 
