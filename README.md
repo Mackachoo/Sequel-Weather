@@ -11,7 +11,7 @@
 
 This is a simple weather app that shows the weather in London, including a detailed graph for temperature over the day and the next 7 days. You can also search for different locations to get the weather all over the world, this was done using GCP Geocoding API. The second page called workable allows a user to pick weather limits, such as a maximum wind speed, and it will tell you what time of the day would fall within these limits. This would be useful for weather dependant any weather dependent activities.
 
-[Showcase Video](Showcase.mov "~1min .mov")
+[Showcase Video](readme/Showcase.mov "~1min .mov")
 
 | ![1695498854667](image/README/1695498854667.png) | ![1695498862623](image/README/1695498862623.png) | ![1695498869513](image/README/1695498869513.png) | ![1695498875399](image/README/1695498875399.png) | ![1695498881922](image/README/1695498881922.png) |
 | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
@@ -50,9 +50,3 @@ This is a simple weather app that shows the weather in London, including a detai
 * `react-native-svg` - for use of SVG icons of the weather state.
 * `react-native-svg-transformer` - for use of SVG icons of the weather state.
 * `react-native-chart-kit` - for creating graphs to show the weather over time
-
-
-
-letgeoAPIKey:string='AIzaSyAseRoEdbXy627UejN9haEAKPBpGnQhPpE';
-
-exportdefaultgeoAPIKey;
